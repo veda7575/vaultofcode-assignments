@@ -11,13 +11,14 @@
 
     <section id="About me">
         <h2>About Me</h2>
-        <p>I’m a third-year Information Science Engineering student passionate about technology and design.
-           Skilled in Python, C, Java, web development, and SQL, with a strong foundation in software engineering.
-           I enjoy expanding my technical expertise.
-           I am deeply interested in UI/UX design, where creativity meets functionality.
-           I love exploring new ways to build clean, user-friendly, and impactful digital experiences.
-           Known as a quick learner and problem solver, I enjoy tackling challenges with curiosity and focus.
-           I’m seeking opportunities in software development to grow and contribute meaningfully.</p>
+        <p>
+            I’m a third-year Information Science Engineering student passionate about technology and design.
+            Skilled in Python, C, Java, web development, and SQL, with a strong foundation in software engineering.
+            I enjoy expanding my technical expertise. I am deeply interested in UI/UX design, where creativity
+            meets functionality. I love exploring new ways to build clean, user-friendly, and impactful digital
+            experiences. Known as a quick learner and problem solver, I enjoy tackling challenges with curiosity
+            and focus. I’m seeking opportunities in software development to grow and contribute meaningfully.
+        </p>
     </section>
 
     <section>
@@ -43,21 +44,28 @@
     <section id="Projects">
         <h2>Projects</h2>
 
-        <h3>Cybersecurity Threat and Incident Management System (DBMS Project – IV Semester)</h3>
-        <p>Technologies: HTML, CSS, JavaScript, Node.js, MySQL.
-           Developed a secure system to monitor, detect and manage cybersecurity threats.
-           Implemented login/authentication, incident logging, threat categorization, and an admin dashboard.</p>
+        <h3>Cybersecurity Threat and Incident Management System 
+            (DBMS Project – IV Semester)</h3>
+        <p>
+            Technologies: HTML, CSS, JavaScript, Node.js, MySQL. Developed a secure system to monitor,
+            detect and manage cybersecurity threats. Implemented login/authentication, incident logging,
+            threat categorization, and an admin dashboard.
+        </p>
 
         <h3>Friends Network – Replica of Facebook (III Semester)</h3>
-        <p>Technologies: C Programming, Linked Lists.
-           Simulated a basic social network enabling friend management using linked list structures.
-           Included features such as adding/removing friends and detecting mutual friends.</p>
+        <p>
+            Technologies: C Programming, Linked Lists. Simulated a basic social network enabling friend
+            management using linked list structures. Included features such as adding/removing friends and
+            detecting mutual friends.
+        </p>
 
         <h3>Smart Alarm System (IoT Project – II Semester)</h3>
-        <p>Technologies: Arduino UNO, C/C++ (Arduino IDE), PIR/Gas Sensors, Buzzer, LCD/LED.
-           Designed a smart alarm system responsive to motion, gas, and smoke sensors for enhanced safety.
-           Implemented automatic alerts and low-cost security solutions for homes and small offices.
-           Demonstrated sensor integration, real-time response, and basic automation using Arduino.</p>
+        <p>
+            Technologies: Arduino UNO, C/C++ (Arduino IDE), PIR/Gas Sensors, Buzzer, LCD/LED.
+            Designed a smart alarm system responsive to motion, gas, and smoke sensors for enhanced safety.
+            Implemented automatic alerts and low-cost security solutions for homes and small offices.
+            Demonstrated sensor integration, real-time response, and basic automation using Arduino.
+        </p>
     </section>
 
     <section id="Contacts">
@@ -65,7 +73,8 @@
         <p>Phone Number: <a href="tel:+918660814071">+91 8660814071</a></p>
         <p>Email: <a href="mailto:vedas23is@rnsit.ac.in">vedas23is@rnsit.ac.in</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/veda-s-518572310" target="_blank">
-            linkedin.com/in/veda-s-518572310</a></p>
+            linkedin.com/in/veda-s-518572310</a>
+        </p>
     </section>
 
 </body>
