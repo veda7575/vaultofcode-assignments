@@ -1,0 +1,257 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#progressBar {
+  height: 5px;
+  width: 0%;
+  background: #00ff99;
+  transition: width 0.4s ease;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease;
+  margin-top: 0;
+}
+
+.preview-section {
+  flex: 1.5;
+  min-width: 300px;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.8s ease;
+  transition: all 0.4s ease;
+  margin-top: 0;
+}
+
+.form-section h2, .preview-section h2 {
+  color: #4e54c8;
+  text-align: center;
+}
+
+label {
+  display: block;
+  text-align: left;    
+  margin: 15px 0 5px 0;
+  width: 100%;
+  font-weight: 600;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  display: block;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 5px #8f94fb;
+}
+
+input:hover, textarea:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px rgba(0,150,255,0.3);
+}
+
+button {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #8f94fb;
+  transform: scale(1.05);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#resumePreview.updated {
+  background-color: #e0f7ff;
+  transition: background-color 0.4s ease;
+}
+
+.resume-box h1 {
+  font-size: 1.8em;
+  color: #4e54c8;
+}
+
+.resume-box h3 {
+  margin-top: 15px;
+  border-bottom: 2px solid #4e54c8;
+  display: inline-block;
+}
+
+.resume-box ul {
+  padding-left: 20px;
+}
+
+h3 {
+  margin: 20px 0 8px 0;
+  color: #4e54c8;
+  width: 100%;
+  text-align: left;
+}
+
+#educationContainer, #experienceContainer {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.edu-entry, .exp-entry {
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #4e54c8;
+  width: 100%;
+}
+
+.edu-entry input, .exp-entry input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.removeBtn {
+  background: #e74c3c;
+  margin-top: 5px;
+}
+
+.removeBtn:hover {
+  background: #c0392b;
+}
+
+#addEducation, #addExperience {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#addExperience {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#skillInput {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+#addSkill {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#skillsList {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes previewUpdate {
+  0% { transform: scale(0.995); opacity: 0.8; }
+  50% { transform: scale(1.005); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+#resumePreview.animate {
+  animation: previewUpdate 0.6s ease; 
+}
+
+#resumePreview.animate {
+  animation: previewUpdate 0.4s ease;
+}
+
+#resumePreview.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .preview-section, .form-section {
+    max-width: 90%;
+  }
+  
+  h3 {
+    margin: 15px 0 6px 0;
+  }
+  
+  #addExperience {
+    margin-bottom: 15px;
+  }
+}
+
+#progressBar {
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+#progressBar.filling {
+  background: linear-gradient(90deg, #00ff99, #00cc77);
+}
